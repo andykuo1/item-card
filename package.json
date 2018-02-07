@@ -1,0 +1,22 @@
+{
+  "name": "itemcard",
+  "version": "1.0.0",
+  "description": "Fantasy Item Card HTML Generator",
+  "main": "export.js",
+  "scripts": {
+    "test": "export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andykuo1/itemcard.git"
+  },
+  "author": "Andrew Kuo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andykuo1/itemcard/issues"
+  },
+  "homepage": "https://github.com/andykuo1/itemcard#readme",
+  "dependencies": {
+    "inliner": "^1.13.1"
+  }
+}

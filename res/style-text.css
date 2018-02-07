@@ -1,4 +1,4 @@
-a, .stat .mystery .holy {
+a, .stat .mystery .holy .metal {
   text-decoration: none;
   font-family: 'Passero One', cursive;
   font-size: 13px;
@@ -35,25 +35,6 @@ a, .stat .mystery .holy {
 	100% {
 		background-position: 0% 50%
 	}
-}
-
-@@keyframes bounce {
-  0% {
-    top: 20px;
-  }
-  100% {
-    top: -20px;
-    text-shadow: 0 1px 0 #CCC,
-                 0 2px 0 #CCC,
-                 0 3px 0 #CCC,
-                 0 4px 0 #CCC,
-                 0 5px 0 #CCC,
-                 0 6px 0 #CCC,
-                 0 7px 0 #CCC,
-                 0 8px 0 #CCC,
-                 0 9px 0 #CCC,
-                 0 50px 25px rgba(0, 0, 0, .2);
-  }
 }
 
 .holy {
@@ -99,5 +80,32 @@ a, .stat .mystery .holy {
                0 0 40px #FFDD1B,
                0 0 50px #FFDD1B,
                0 0 75px #FFDD1B;
+  }
+}
+
+.metal {
+  display: inline;
+  color: white;
+  background: #8c8c8c -webkit-gradient(linear, 100% 0, 0 0, from(#8c8c8c), color-stop(0.5, #ffffff), to(#8c8c8c));
+  background-position: -4rem top;
+
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-name: shimmer;
+  -webkit-animation-duration: 2.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-background-size: 4rem 100%;
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: -4rem top;
+  }
+  70% {
+    background-position: 12.5rem top;
+  }
+  100% {
+    background-position: 12.5rem top;
   }
 }

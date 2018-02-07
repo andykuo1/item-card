@@ -8,12 +8,13 @@ var portraitImages = 'portraits.json';
 var itemCardHeader = '<h2 class="item-name">';
 
 var src = process.argv[2] || '.';
-var tmp = process.argv[3] || './intermediates';
-var dst = process.argv[4] || './artifacts';
+var itm = process.argv[3] || './items';
+var tmp = process.argv[4] || './intermediates';
+var dst = process.argv[5] || './artifacts';
 
 clearDirectory(tmp);
 copyLooseResources(src + '/res', tmp + '/res');
-generateHTMLs(src + '/res/items', src, src + '/res', tmp, dst);
+generateHTMLs(itm, src, src + '/res', tmp, dst);
 
 function generateHTMLs(itemDirectory, sourceDirectory, resourceDirectory, outputDirectory, minifyDirectory = null)
 {

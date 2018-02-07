@@ -1,3 +1,4 @@
 artifacts/
 intermediates/
-res/items/
+node_modules/
+items/
