@@ -1,0 +1,72 @@
+<html>
+<!--ITEM-->
+<script>
+  name = "Mystery Item";
+  desc = "You have found a <a class=\"mystery\">mysterious</a> item, and you are not sure what it does.";
+  stat = "+5 To Hit, 1d12+2 DMG";
+  acts = "It will do something, but you are not sure what. It may heal <a class=\"stat\">1d4 HP</a> or deal <a class=\"stat\">1d11 Psychic DMG</a>. It probably belongs to <a class=\"holy\">Tiamat</a>.";
+</script>
+<!--CONTENT-->
+  <head>
+    <title>Item</title>
+    <script src="res/main.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Passero+One" rel="stylesheet">
+    <link href="res/style.css" rel="stylesheet">
+  </head>
+  <body onload="load()">
+    <div class="card-container">
+      <div class="card">
+        <div class="front">
+<!--FRONT-->
+          <h2 class="item-name">Item Name</h2>
+          <p class="item-description">Item Description</p>
+          <hr>
+          <div class="item-stat">Item Stats</div>
+          <p class="item-action">Item Actions</p>
+<!--END-->
+        </div>
+        <div class="back">
+<!--BACK-->
+          <label id="flippable" class="hint" style="padding:0 0 10px 10px;position:absolute;left:0;bottom:0;">
+            <input onchange="doFlip()" type="checkbox" />
+            <<
+          </label>
+          <label id="draggable" class="hint" style="padding:0 10px 3px 0;position:absolute;right:0;bottom:0;font-size:26px;">
+            #
+          </label>
+<!--PORTRAIT-->
+          <!--ITEM--><img src="https://i.pinimg.com/236x/b1/25/27/b125270c1dca2e56d4c864eabd7fef5f--rpg-items-fantasy-beasts.jpg"  style="top: 60px; left: 0; width: 100%;">
+          <!--POTION--><!--img src="https://img00.deviantart.net/aaf7/i/2013/144/9/2/level_2_health_potion___open_by_adorabless-d66diis.png" style="top: 80px; left: 45px; width: 150px; height: 180px;"-->
+          <!--MUG--><!--img src="https://i.pinimg.com/originals/90/7d/54/907d54995a681dcb52e69eee9100f2c6.jpg" style="top: 100px; left: 55px; width: 120px;"-->
+          <!--SPELL--><!--img src="https://i.pinimg.com/736x/91/82/74/9182740fb6ddc2f9847b668274392099--rpg-items-spell-books.jpg" style="left: 25px; width: 80%;"-->
+          <!--ROCK--><!--img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/432/1000/1000/636284771785907207.jpeg" style="left: 25px; width: 80%"-->
+          <!--AMULET--><!--img src="http://www.dndadventure.com/wp-content/uploads/2017/03/amulet.jpg" style="left: 46px; top: 60px; width: 150px"-->
+
+          <!--MACE--><!--img src="https://media.archonia.com/images/samples/04/12/190412_s0.jpg" style="top: 80px; left: 35px; width: 70%"-->
+
+          <!-- --><!--img src=""-->
+          <!-- --><!--img src=""-->
+          <!-- --><!--img src=""-->
+          <!-- --><!--img src=""-->
+          <!-- --><!--img src=""-->
+          <!-- --><!--img src=""-->
+
+          <!--DRAWING SHIELD--><!--img src="http://d20pfsrd.opengamingnetwork.com/wp-content/uploads/sites/12/2017/01/shield2.jpg" style="top: 80px; left: 60px; width: 50%"-->
+          <!--DRAWING WEAPON--><!--img src="https://vignette.wikia.nocookie.net/finalfantasy/images/b/bc/Battleaxe_FFIII_Art.png/revision/latest?cb=20120825073421" style="top: 80px; left: 30px; width: 70%;"-->
+
+          <!--HOLY ARTIFACT--><!--img src="https://i.pinimg.com/736x/d6/ea/8a/d6ea8a95ee936c67f048145a01467ccf--rpg-items-bastion.jpg" style="top: 80px; left: 38px; width: 70%"-->
+
+          <!--FANTASY SHIRT--><!--img src="https://i.pinimg.com/originals/71/be/ff/71beff48a079b645813f5d4adbe53df0.png" style="top: 80px; left: 38px; width: 70%"-->
+          <!--FANTASY BOOTS--><!--img src="http://www.tosbase.com/content/img/icons/items/icon_item_eastengarden_boots.png" style="top: 90px; left: 45px; width: 60%"-->
+          <!--FANTASY GLOVES--><!--img src="http://www.playulti.com/static/thumb/2017/9/11/attach-1507705163348.jpg" style="top: 80px; left: 38px; width: 70%"-->
+
+          <!--TAROT1--><!--img src="http://katarinapersson.com/wp-content/uploads/2017/08/unique-tarot-card-birthday-inspiration-modern-tarot-card-birthday-wallpaper.jpg"-->
+          <!--TAROT2--><!--img src="https://i.pinimg.com/originals/d3/b4/f6/d3b4f6e5653c396e7aaf8d0d26f8f827.jpg"-->
+<!--END-->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

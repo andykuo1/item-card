@@ -1,0 +1,103 @@
+a, .stat .mystery .holy {
+  text-decoration: none;
+  font-family: 'Passero One', cursive;
+  font-size: 13px;
+}
+
+.mystery {
+  background: linear-gradient(-45deg, #0b8e70, #4d24af, #8f2ea0, #aa2323);
+	background-size: 400% 400%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	-webkit-animation: gradient 30s ease infinite;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+[sideonly] .mystery:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@@keyframes bounce {
+  0% {
+    top: 20px;
+  }
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 #CCC,
+                 0 7px 0 #CCC,
+                 0 8px 0 #CCC,
+                 0 9px 0 #CCC,
+                 0 50px 25px rgba(0, 0, 0, .2);
+  }
+}
+
+.holy {
+  color:#6b560a;
+
+  text-shadow: 0 0 10px #fff,
+             0 0 20px  #fff,
+             0 0 30px  #fff,
+             0 0 40px  #FFDD1B,
+             0 0 70px  #FFDD1B,
+             0 0 80px  #FFDD1B,
+             0 0 100px #FFDD1B,
+             0 0 150px #FFDD1B;
+
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+[sideonly] .holy:hover {
+  -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+  animation: glow 0.5s ease-in-out infinite alternate;
+
+  color:#FFF;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FFDD1B,
+               0 0 70px  #FFDD1B,
+               0 0 80px  #FFDD1B,
+               0 0 100px #FFDD1B,
+               0 0 150px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FFDD1B,
+               0 0 35px #FFDD1B,
+               0 0 40px #FFDD1B,
+               0 0 50px #FFDD1B,
+               0 0 75px #FFDD1B;
+  }
+}
