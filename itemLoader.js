@@ -1,5 +1,4 @@
 const fs = require('fs');
-const mkdirp = require('mkdirp');
 
 var tables = {};
 var specials = {};
@@ -91,6 +90,7 @@ function run()
 
   if (!itemPath) throw new Error("missing item path");
   if (!layoutPath) throw new Error("missing layout path");
+
   console.log(load(itemPath, layoutPath, resourceDirectory));
 }
 

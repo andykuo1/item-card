@@ -64,11 +64,12 @@ function clearDirectory(directory)
   }
 }
 
-function make(modelPath, layoutPath, inputPath, outputPath, resourceDirectory = './res')
+function build(modelPath, layoutPath, inputPath, outputPath, resourceDirectory)
 {
   let tempPath = outputPath + '/_intermediates';
   let lstat = fs.lstatSync(inputPath);
   clearDirectory(outputPath);
+  //TODO: Should be configurable to be something other than 'res'
   copyLooseResources(resourceDirectory, tempPath + '/res');
 
   if (lstat.isFile())
@@ -107,7 +108,7 @@ function run()
   var layoutPath = process.argv[3];
   var inputPath = process.argv[4];
   var outputPath = process.argv[5];
-  var resourceDirectory = process.argv[6];
+  var resourceDirectory = process.argv[6] || './res';
 
   if (!modelPath) throw new Error("missing model path");
   if (!layoutPath) throw new Error("missing layout path");
@@ -115,10 +116,10 @@ function run()
   if (!outputPath) throw new Error("missing output path");
   if (!resourceDirectory) throw new Error("missing resource directory");
 
-  make(modelPath, layoutPath, inputPath, outputPath, resourceDirectory);
+  build(modelPath, layoutPath, inputPath, outputPath, resourceDirectory);
 }
 
 module.exports = {
-  make
+  build
 };
 if (require.main == module) run();

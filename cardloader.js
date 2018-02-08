@@ -1,5 +1,4 @@
 const fs = require('fs');
-const mkdirp = require('mkdirp');
 
 function parseModel(filedata)
 {
@@ -18,7 +17,7 @@ function injectItemToModel(itemData, modelData)
   return result;
 }
 
-function load(modelPath, itemPath, layoutPath, resourceDirectory = './res')
+function load(modelPath, itemPath, layoutPath, resourceDirectory)
 {
   var model = parseModel(fs.readFileSync(modelPath, 'utf-8'));
 
