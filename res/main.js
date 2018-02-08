@@ -2,11 +2,11 @@ function load()
 {
   const container = document.getElementsByClassName('card-container')[0];
 
-  setInnerHTML(container.getElementsByTagName('title'), name);
-  setInnerHTML(container.getElementsByClassName('item-name'), name);
-  setInnerHTML(container.getElementsByClassName('item-description'), desc);
-  setInnerHTML(container.getElementsByClassName('item-stat'), stat);
-  setInnerHTML(container.getElementsByClassName('item-action'), acts);
+  //setInnerHTML(document.getElementsByTagName('title'), name);
+  //setInnerHTML(container.getElementsByClassName('item-name'), name);
+  //setInnerHTML(container.getElementsByClassName('item-description'), desc);
+  //setInnerHTML(container.getElementsByClassName('item-stat'), stat);
+  //setInnerHTML(container.getElementsByClassName('item-action'), acts);
 
   const draggable = document.getElementById('draggable');
 

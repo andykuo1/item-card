@@ -1,0 +1,24 @@
+    <div class="card-container">
+      <div class="card">
+        <div class="front">
+<!--FRONT-->
+          <h2 class="item-name">$name</h2>
+          <p class="item-description">$desc</p>
+          <hr>
+          <div class="item-stat">$stat</div>
+          <p class="item-action">$acts</p>
+        </div>
+        <div class="back">
+<!--BACK-->
+          <label id="flippable" class="hint" style="padding:0 0 10px 10px;position:absolute;left:0;bottom:0;">
+            <input onchange="doFlip(this)" type="checkbox" />
+            <<
+          </label>
+          <label id="draggable" class="hint" style="padding:0 10px 3px 0;position:absolute;right:0;bottom:0;font-size:26px;">
+            #
+          </label>
+          $portrait
+<!--END-->
+        </div>
+      </div>
+    </div>

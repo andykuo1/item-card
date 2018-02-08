@@ -1,12 +1,4 @@
 <html>
-<!--ITEM-->
-<script>
-  name = "Mystery Item";
-  desc = "You have found a <a class=\"mystery\">mysterious</a> item, and you are not sure what it does.";
-  stat = "+5 To Hit, 1d12+2 DMG";
-  acts = "It will do <a class=\"metal\">something</a>, but you are not sure what. It may heal <a class=\"stat\">1d4 HP</a> or deal <a class=\"stat\">1d11 Psychic DMG</a>. It probably belongs to <a class=\"holy\">Tiamat</a>.";
-</script>
-<!--CONTENT-->
   <head>
     <title>Item</title>
     <script src="res/main.js"></script>
@@ -16,27 +8,26 @@
     <link href="res/style.css" rel="stylesheet">
   </head>
   <body onload="load()">
+<!--CARDS-->
     <div class="card-container">
       <div class="card">
         <div class="front">
 <!--FRONT-->
-          <h2 class="item-name">Item Name</h2>
-          <p class="item-description">Item Description</p>
+          <h2 class="item-name">Mystery Item</h2>
+          <p class="item-description">You have found a <a class="mystery">mysterious</a> item, and you are not sure what it does.</p>
           <hr>
-          <div class="item-stat">Item Stats</div>
-          <p class="item-action">Item Actions</p>
-<!--END-->
+          <div class="item-stat">+5 To Hit, 1d12+2 DMG</div>
+          <p class="item-action">It will do <a class="metal">something</a>, but you are not sure what. It may heal <a class="stat">1d4 HP</a> or deal <a class="stat">1d11 Psychic DMG</a>. It probably belongs to <a class="holy">Tiamat</a>.</p>
         </div>
         <div class="back">
 <!--BACK-->
           <label id="flippable" class="hint" style="padding:0 0 10px 10px;position:absolute;left:0;bottom:0;">
-            <input onchange="doFlip()" type="checkbox" />
+            <input onchange="doFlip(this)" type="checkbox" />
             <<
           </label>
           <label id="draggable" class="hint" style="padding:0 10px 3px 0;position:absolute;right:0;bottom:0;font-size:26px;">
             #
           </label>
-<!--PORTRAIT-->
           <!--ITEM--><img src="https://i.pinimg.com/236x/b1/25/27/b125270c1dca2e56d4c864eabd7fef5f--rpg-items-fantasy-beasts.jpg"  style="top: 60px; left: 0; width: 100%;">
           <!--POTION--><!--img src="https://img00.deviantart.net/aaf7/i/2013/144/9/2/level_2_health_potion___open_by_adorabless-d66diis.png" style="top: 80px; left: 45px; width: 150px; height: 180px;"-->
           <!--MUG--><!--img src="https://i.pinimg.com/originals/90/7d/54/907d54995a681dcb52e69eee9100f2c6.jpg" style="top: 100px; left: 55px; width: 120px;"-->
@@ -68,5 +59,7 @@
         </div>
       </div>
     </div>
+    
+<!--BODY-->
   </body>
 </html>
