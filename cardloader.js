@@ -22,7 +22,7 @@ function load(modelPath, itemPath, layoutPath, resourceDirectory = './res')
 {
   var model = parseModel(fs.readFileSync(modelPath, 'utf-8'));
 
-  const itemLoader = require('./itemLoader.js');
+  const itemLoader = require('./itemloader.js');
   var item = itemLoader.load(itemPath, layoutPath, resourceDirectory);
 
   var result = injectItemToModel(item, model);

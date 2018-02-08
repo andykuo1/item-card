@@ -17,7 +17,7 @@ function compileItem(name, itemPath, outputPath)
 
 function exportItemToFile(name, modelPath, itemPath, layoutPath, resourceDirectory, dst)
 {
-  var itemCardLoader = require('./itemCardLoader.js');
+  var itemCardLoader = require('./cardloader.js');
   console.log("Loading \'" + name + "\'...");
   var itemCard = itemCardLoader.load(modelPath, itemPath, layoutPath, resourceDirectory);
   console.log("Exporting \'" + name + "\'...");
