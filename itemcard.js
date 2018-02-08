@@ -5,12 +5,18 @@ const path = require('path');
 function make(layout = 'default')
 {
   var config = JSON.parse(fs.readFileSync('./config.json', 'utf-8'));
-  var resourceDirectory = './res';
+
   var itemPath = config.itemdir;
   var modelPath = config.modelfile;
-  var layoutPath = resourceDirectory + '/layouts/' + layout + '.html';
-  var cardexport = require('./cardexport.js');
-  cardexport.build(modelPath, layoutPath, itemPath, './artifacts', resourceDirectory);
+  var cssPath = config.modelcss;
+  var jsPath = config.modeljs;
+  var resPath = config.resources;
+  var outputPath = config.artifacts;
+
+  var layoutPath = resPath + '/layouts/' + layout + '.html';
+
+  var cardexport = require('./lib/cardexport.js');
+  cardexport.build(modelPath, cssPath, jsPath, itemPath, layoutPath, outputPath, resPath);
 }
 
 function run()

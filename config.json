@@ -1,4 +1,8 @@
 {
   "itemdir": "./res/items",
-  "modelfile": "./index.html"
+  "modelfile": "./index.html",
+  "modeljs": "./js",
+  "modelcss": "./css",
+  "resources": "./res",
+  "artifacts": "./artifacts"
 }
