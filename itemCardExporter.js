@@ -64,7 +64,7 @@ function clearDirectory(directory)
   }
 }
 
-function makeHTML(modelPath, layoutPath, inputPath, outputPath, resourceDirectory = './res')
+function make(modelPath, layoutPath, inputPath, outputPath, resourceDirectory = './res')
 {
   let tempPath = outputPath + '/_intermediates';
   let lstat = fs.lstatSync(inputPath);
@@ -115,10 +115,10 @@ function run()
   if (!outputPath) throw new Error("missing output path");
   if (!resourceDirectory) throw new Error("missing resource directory");
 
-  makeHTML(modelPath, layoutPath, inputPath, outputPath, resourceDirectory);
+  make(modelPath, layoutPath, inputPath, outputPath, resourceDirectory);
 }
 
 module.exports = {
-  makeHTML
+  make
 };
 if (require.main == module) run();
