@@ -3,7 +3,8 @@
   "<!--POTION--><img src=\"https://img00.deviantart.net/aaf7/i/2013/144/9/2/level_2_health_potion___open_by_adorabless-d66diis.png\" style=\"top: 80px; left: 45px; width: 150px; height: 180px;\">",
   "<!--MUG--><img src=\"https://i.pinimg.com/originals/90/7d/54/907d54995a681dcb52e69eee9100f2c6.jpg\" style=\"top: 100px; left: 55px; width: 120px;\">",
   "<!--SPELL--><img src=\"https://i.pinimg.com/736x/91/82/74/9182740fb6ddc2f9847b668274392099--rpg-items-spell-books.jpg\" style=\"left: 25px; width: 80%;\">",
-  "<!--ROCK--><img src=\"https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/432/1000/1000/636284771785907207.jpeg\" style=\"left: 25px; width: 80%\">",
+  "<!--ROCK--><img src=\"https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/432/1000/1000/636284771785907207.jpeg\" style=\"top: 75px; left: 25px; width: 80%\">",
   "<!--AMULET--><img src=\"http://www.dndadventure.com/wp-content/uploads/2017/03/amulet.jpg\" style=\"left: 46px; top: 60px; width: 150px\">",
-  "<!--HOLY ARTIFACT--><img src=\"https://i.pinimg.com/736x/d6/ea/8a/d6ea8a95ee936c67f048145a01467ccf--rpg-items-bastion.jpg\" style=\"top: 80px; left: 38px; width: 70%\">"
+  "<!--HOLY_ARTIFACT--><img src=\"https://i.pinimg.com/736x/d6/ea/8a/d6ea8a95ee936c67f048145a01467ccf--rpg-items-bastion.jpg\" style=\"top: 80px; left: 38px; width: 70%\">",
+  "<!--EMPTY_DROP--><img src=\"http://www.clker.com/cliparts/m/O/Y/K/z/m/black-swirl.svg\" style=\"top: 40px; left: 10px; width: 90%; opacity: 0.8;\">"
 ]

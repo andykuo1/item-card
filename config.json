@@ -1,5 +1,5 @@
 {
-  "itemdir": "./res/items",
+  "itemdir": "./items",
   "modelfile": "./index.html",
   "modeljs": "./js",
   "modelcss": "./css",

@@ -1,0 +1,24 @@
+    <div class="card-container">
+      <div class="card">
+        <div class="front">
+<!--FRONT-->
+          <h2 class="item-name">$name</h2>
+          <p class="item-description">$desc</p>
+          <hr>
+          <div class="item-stat">Unidentified</div>
+          <p class="item-action" style="text-align:center;font-size:48px;">???</p>
+        </div>
+        <div class="back">
+<!--BACK-->
+          <label id="flippable" class="hint" style="padding:0 0 10px 10px;position:absolute;left:0;bottom:0;">
+            <input onchange="doFlip(this)" type="checkbox" />
+            <<
+          </label>
+          <label id="draggable" class="hint" style="padding:0 10px 3px 0;position:absolute;right:0;bottom:0;font-size:26px;">
+            #
+          </label>
+          <!--EMPTY_DROP--><img src="http://www.clker.com/cliparts/m/O/Y/K/z/m/black-swirl.svg" style="top: 40px; left: 10px; width: 90%; opacity: 0.8;">
+<!--END-->
+        </div>
+      </div>
+    </div>
