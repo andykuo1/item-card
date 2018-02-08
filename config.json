@@ -4,5 +4,6 @@
   "modeljs": "./js",
   "modelcss": "./css",
   "resources": "./res",
-  "artifacts": "./artifacts"
+  "artifacts": "./artifacts",
+  "defaultlayout": "default"
 }
