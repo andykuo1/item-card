@@ -3,8 +3,8 @@
 /****************************************** MAIN STYLE */
 body {
   /*background: rgb(200, 200, 200);*/
-  background: url(http://s966.info/library/v/vintage-wood-table-texture/vintage-wood-table-texture-07.jpg) center center;
-  background-size: cover;
+  background: black url(https://s.cdpn.io/16327/texture_bg.jpg) no-repeat 50% 0px;
+  /*backround: url(http://s966.info/library/v/vintage-wood-table-texture/vintage-wood-table-texture-07.jpg) center center; background-size: cover;*/
 }
 hr {
   display: block;
