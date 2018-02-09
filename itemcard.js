@@ -19,6 +19,14 @@ function make(layout = 'default')
   cardexport.build(modelPath, cssPath, jsPath, itemPath, layoutPath, outputPath, resPath);
 }
 
+function clean()
+{
+  var outputPath = config.artifacts;
+  
+  var cardexport = require('./lib/cardexport.js');
+  cardexport.clearDirectory(outputPath);
+}
+
 function run()
 {
   var layout = process.argv[2];
@@ -26,6 +34,7 @@ function run()
 }
 
 module.exports = {
-  make
+  make,
+  clean
 };
 if (require.main == module) run();
