@@ -2,9 +2,9 @@
   "name": "itemcard",
   "version": "1.0.0",
   "description": "Fantasy Item Card HTML Generator",
-  "main": "export.js",
+  "main": "itemcard.js",
   "scripts": {
-    "test": "export"
+    "make": "node itemcard"
   },
   "repository": {
     "type": "git",
