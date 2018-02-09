@@ -1,10 +1,7 @@
 {
   "itemdir": "./items",
   "modelfile": "./index.html",
-  "modeljs": "./js",
-  "modelcss": "./css",
-  "modelimg": "./img",
-  "modelfont": "./font",
+  "modelres": ".",
   "resources": "./res",
   "artifacts": "./artifacts",
   "layouts": [
