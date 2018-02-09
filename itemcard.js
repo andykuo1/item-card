@@ -11,9 +11,8 @@ function make(layout = 'default')
   var cssPath = config.modelcss;
   var jsPath = config.modeljs;
   var resPath = config.resources;
+  var layoutPath = config.layouts;
   var outputPath = config.artifacts;
-
-  var layoutPath = resPath + '/layouts/' + layout + '.html';
 
   var cardexport = require('./lib/cardexport.js');
   cardexport.build(modelPath, cssPath, jsPath, itemPath, layoutPath, outputPath, resPath);
@@ -22,7 +21,7 @@ function make(layout = 'default')
 function clean()
 {
   var outputPath = config.artifacts;
-  
+
   var cardexport = require('./lib/cardexport.js');
   cardexport.clearDirectory(outputPath);
 }

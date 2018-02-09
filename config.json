@@ -5,5 +5,8 @@
   "modelcss": "./css",
   "resources": "./res",
   "artifacts": "./artifacts",
-  "defaultlayout": "default"
+  "layouts": [
+    "./res/layouts/default.html",
+    "./res/layouts/hidden.html"
+  ]
 }
