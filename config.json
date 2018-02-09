@@ -3,6 +3,8 @@
   "modelfile": "./index.html",
   "modeljs": "./js",
   "modelcss": "./css",
+  "modelimg": "./img",
+  "modelfont": "./font",
   "resources": "./res",
   "artifacts": "./artifacts",
   "layouts": [
