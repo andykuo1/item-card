@@ -84,7 +84,6 @@ a, .stat .mystery .holy .metal {
 }
 
 .metal {
-  display: inline;
   color: white;
   background: #8c8c8c -webkit-gradient(linear, 100% 0, 0 0, from(#8c8c8c), color-stop(0.5, #ffffff), to(#8c8c8c));
   background-position: -4rem top;
